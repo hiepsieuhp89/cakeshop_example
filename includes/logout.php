@@ -1,10 +1,9 @@
  <?php 
-
 session_start();
-session_unset($_SESSION['userid']);
-session_unset($_SESSION['fname']);
-session_unset($_SESSION['lname']);
-session_unset($_SESSION['position']);
-session_unset($_SESSION['cart']);
+unset($_SESSION['userid']);
+unset($_SESSION['fname']);
+unset($_SESSION['lname']);
+unset($_SESSION['position']);
+unset($_SESSION['cart']);
 header("Location: ../index.php");
 ?>
